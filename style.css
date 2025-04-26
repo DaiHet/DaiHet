@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0B3D0B;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
+.player-area {
+    background-color: #2E8B57;
+    padding: 10px;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #004d00;
+    border-radius: 10px;
+    margin: 10px;
+}
+.player-area input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    width: 150px;
+    outline: none;
+}
+.chips {
+    margin-top: 5px;
+}
+.hand {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.card {
+    background-color: white;
+    color: black;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 2px;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.controls {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.controls button {
+    padding: 8px 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #6B8E23;
+    color: white;
+    cursor: pointer;
+}
+.controls button:hover {
+    background-color: #A9BA9D;
+}
+.community {
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+#result {
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+@keyframes glow {
+    0% { box-shadow: 0 0 10px 5px yellow; }
+    50% { box-shadow: 0 0 20px 10px yellow; }
+    100% { box-shadow: 0 0 10px 5px yellow; }
+}
+.win {
+    animation: glow 1s ease-in-out 2;
+}
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+        position: static;
+        margin-top: 10px;
+    }
+    .player-area {
+        width: 100%;
+    }
+}

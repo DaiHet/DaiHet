@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Техасский Холдем - 2 игрока</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="table">
+        <div id="player2-area" class="player-area top">
+            <input type="text" id="player2-name" placeholder="Игрок 2">
+            <div class="chips">Фишки: 100</div>
+            <div class="hand"></div>
+        </div>
+        <div class="community">
+            <div id="pot">Pot: <span id="pot-amount">0</span></div>
+            <div id="bet">Bet: <span id="bet-amount">0</span></div>
+            <div id="timer">30</div>
+            <div id="turn"></div>
+            <div id="result"></div>
+        </div>
+        <div id="player1-area" class="player-area bottom">
+            <input type="text" id="player1-name" placeholder="Игрок 1">
+            <div class="chips">Фишки: 100</div>
+            <div class="hand"></div>
+        </div>
+        <div class="controls">
+            <button id="check-btn">Чек</button>
+            <button id="call-btn">Колл</button>
+            <button id="raise-btn">Рейз</button>
+            <button id="allin-btn">Алл-ин</button>
+            <button id="fold-btn">Фолд</button>
+            <button id="newgame-btn">Новая игра</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
